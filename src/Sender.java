@@ -23,10 +23,12 @@ public class Sender implements  Runnable {
 
     private String[] generate(){
         String[] arr = new String[11];
-        Random ran = new Random();
+//        Random ran = new Random();
 
+        //od 1 po 10
         for (int i = 0; i < arr.length-1; i++) {
-            arr[i]= String.valueOf(ran.nextInt(11));
+            arr[i]= String.valueOf(i+1);
+            System.out.println("Number "+i+" "+arr[i]);
         }
 
         arr[10] = "End";
